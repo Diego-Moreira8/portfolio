@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 const StyledContainer = styled.div`
-  margin: 1rem;
   border: 2px solid ${(props) => props.theme.text};
 
   h2 {

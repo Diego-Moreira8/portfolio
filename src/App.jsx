@@ -19,6 +19,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
+  button {
+    background-color: ${theme.background};
+    color: ${theme.text};
+    border: 2px solid ${theme.text};
+    font: bold 1rem "Ubuntu Mono", monospace;
+  }
+
   section {
     min-height: 100vh;
   }
