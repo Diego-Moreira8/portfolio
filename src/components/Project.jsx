@@ -29,8 +29,8 @@ const StyledContainer = styled.div`
     }
 
     .links {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      justify-content: center;
       gap: 1rem;
 
       a {
