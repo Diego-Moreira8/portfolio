@@ -52,12 +52,18 @@ export default function Project({
   return (
     <StyledContainer>
       <h2>{title}</h2>
-      <img src={src} alt={alt} title={alt} />
+      {src && <img src={src} alt={alt} title={alt} />}
       <div>
         <p>{description}</p>
         <div className="links">
-          <a href={repoUrl}>Repositório no GitHub</a>
-          <a href={projectUrl}>Site do projeto</a>
+          <a href={repoUrl} target="_blank">
+            Repositório no GitHub
+          </a>
+          {projectUrl && (
+            <a href={projectUrl} target="_blank">
+              Site do projeto
+            </a>
+          )}
         </div>
       </div>
     </StyledContainer>
