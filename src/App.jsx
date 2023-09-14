@@ -3,6 +3,7 @@ import GlobalFonts from "./fonts/fonts";
 
 import Header from "./components/Header";
 import AboutMeSection from "./components/AboutMeSection";
+import MyProjectsSection from "./components/MyProjectsSection";
 
 const colorPallete = ["#BEE9E8", "#1B4965", "#1b4965d1"];
 
@@ -38,6 +39,7 @@ export default function App() {
       <Content>
         <Header />
         <AboutMeSection />
+        <MyProjectsSection />
       </Content>
     </ThemeProvider>
   );
