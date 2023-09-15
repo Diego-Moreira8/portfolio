@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
+  a:focus, button:focus {
+    outline: 4px solid red;
+    border-radius: 4px;
+  }
+
   button {
     background-color: ${theme.background};
     color: ${theme.text};
