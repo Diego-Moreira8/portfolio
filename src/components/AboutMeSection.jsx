@@ -1,18 +1,16 @@
 import { styled } from "styled-components";
 
 const StyledSection = styled.section`
-  padding: 4rem 2rem 0 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
 
   h1 {
-    a {
-      font-size: 2.5rem;
-      font-weight: bold;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+    font-size: 2.5rem;
+    font-weight: bold;
   }
 
   p {
@@ -23,15 +21,16 @@ const StyledSection = styled.section`
 
 export default function AboutMeSection() {
   return (
-    <StyledSection>
-      <h1 id="about-me">
-        <a href="#about-me">Olá!</a>
-      </h1>
-      <p>
-        Meu nome é Diego. Sou estudante de Sistemas de Informação. <br />
-        Também estudo Desenvolvimento Web. <br /> Amo computadores e sites/apps
-        rápidos, responsivos, limpos e bonitos.
-      </p>
-    </StyledSection>
+    <>
+      <div id="about-me"></div>
+      <StyledSection>
+        <h1>Olá</h1>
+        <p>
+          Meu nome é Diego. Sou estudante de Sistemas de Informação. <br />
+          Também estudo Desenvolvimento Web. <br /> Amo computadores e
+          sites/apps rápidos, responsivos, limpos e bonitos.
+        </p>
+      </StyledSection>
+    </>
   );
 }
