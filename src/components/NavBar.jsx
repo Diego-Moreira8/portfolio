@@ -38,16 +38,16 @@ export default function NavBar() {
     <StyledNav>
       <ul>
         <li>
-          <a href="#">Sobre Mim</a>
+          <a href="#about-me">Sobre Mim</a>
         </li>
         <li>
-          <a href="#">Meus Projetos</a>
+          <a href="#my-projects">Meus Projetos</a>
         </li>
         <li>
-          <a href="#">Tecnologias</a>
+          <a href="#technologies">Tecnologias</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </StyledNav>
