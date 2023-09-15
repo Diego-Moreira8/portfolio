@@ -14,7 +14,8 @@ import openIaIcon from "../icons/openai.svg";
 const StyledTechnologies = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 1rem;
+  width: fit-content;
+  margin: 0 auto;
 `;
 
 export default function TechnologiesSection() {

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import AboutMeSection from "./components/AboutMeSection";
 import MyProjectsSection from "./components/MyProjectsSection";
 import TechnologiesSection from "./components/TechnologiesSection";
+import ContactSection from "./components/ContactSection";
 
 const colorPallete = ["#BEE9E8", "#1B4965", "#1b4965d1"];
 
@@ -53,6 +54,7 @@ export default function App() {
         <AboutMeSection />
         <MyProjectsSection />
         <TechnologiesSection />
+        <ContactSection />
       </Content>
     </ThemeProvider>
   );

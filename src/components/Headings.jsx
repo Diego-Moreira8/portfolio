@@ -5,6 +5,7 @@ const StyledHeading1 = styled.div`
   font-size: 2rem;
   font-weight: bold;
   border-top: 2px solid ${(props) => props.theme.text};
+  margin-bottom: 2rem;
 
   div {
     background-color: ${(props) => props.theme.text};
