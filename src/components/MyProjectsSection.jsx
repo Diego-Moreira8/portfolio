@@ -5,7 +5,7 @@ import SlideGenerator from "./SlideGenerator";
 export default function MyProjectsSection() {
   return (
     <section>
-      <Heading1 text={"Meus Projetos"} />
+      <Heading1 text={"Meus Projetos"} id={"my-projects"} />
       <Carousel slides={SlideGenerator()} />
     </section>
   );

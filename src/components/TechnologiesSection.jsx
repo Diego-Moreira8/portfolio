@@ -21,7 +21,7 @@ const StyledTechnologies = styled.div`
 export default function TechnologiesSection() {
   return (
     <section>
-      <Heading1 text={"Tecnologias"} />
+      <Heading1 text={"Tecnologias"} id={"technologies"} />
 
       <StyledTechnologies>
         <Technology

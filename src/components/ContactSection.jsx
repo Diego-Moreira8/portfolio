@@ -16,7 +16,7 @@ const StyledContacts = styled.div`
 export default function ContactSection() {
   return (
     <section>
-      <Heading1 text={"Contato"} />
+      <Heading1 text={"Contato"} id={"contact"} />
       <StyledContacts>
         <Contact
           url={"https://github.com/Diego-Moreira8"}
