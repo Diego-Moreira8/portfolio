@@ -16,6 +16,10 @@ const StyledTechnologies = styled.div`
   grid-template-columns: repeat(3, 1fr);
   width: fit-content;
   margin: 0 auto;
+
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default function TechnologiesSection() {

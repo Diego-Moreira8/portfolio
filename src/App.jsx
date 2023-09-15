@@ -37,11 +37,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Content = styled.div`
+const Body = styled.div`
   font-family: "Ubuntu Mono", monospace;
   background-color: ${theme.background};
   color: ${theme.text};
   min-height: 100vh;
+`;
+
+const Content = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 export default function App() {
@@ -49,13 +54,15 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <GlobalFonts />
-      <Content>
+      <Body>
         <Header />
-        <AboutMeSection />
-        <MyProjectsSection />
-        <TechnologiesSection />
-        <ContactSection />
-      </Content>
+        <Content>
+          <AboutMeSection />
+          <MyProjectsSection />
+          <TechnologiesSection />
+          <ContactSection />
+        </Content>
+      </Body>
     </ThemeProvider>
   );
 }

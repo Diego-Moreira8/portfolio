@@ -11,6 +11,7 @@ const StyledContacts = styled.div`
   flex-flow: column;
   width: fit-content;
   margin: 0 auto;
+  padding: 0 1rem;
 `;
 
 export default function ContactSection() {

@@ -4,7 +4,8 @@ import { useState } from "react";
 const StyledCarousel = styled.div`
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
 
   .prev-btn {
     border-right: none;
