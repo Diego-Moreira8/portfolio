@@ -9,7 +9,6 @@ const StyledSection = styled.section`
 
     strong {
       font-size: 2.5rem;
-      font-weight: bold;
     }
   }
 `;

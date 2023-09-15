@@ -4,6 +4,7 @@ import GlobalFonts from "./fonts/fonts";
 import Header from "./components/Header";
 import AboutMeSection from "./components/AboutMeSection";
 import MyProjectsSection from "./components/MyProjectsSection";
+import TechnologiesSection from "./components/TechnologiesSection";
 
 const colorPallete = ["#BEE9E8", "#1B4965", "#1b4965d1"];
 
@@ -29,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
   section {
     min-height: 100vh;
   }
+
+  strong {
+    font-weight: bold;
+  }
 `;
 
 const Content = styled.div`
@@ -47,6 +52,7 @@ export default function App() {
         <Header />
         <AboutMeSection />
         <MyProjectsSection />
+        <TechnologiesSection />
       </Content>
     </ThemeProvider>
   );
