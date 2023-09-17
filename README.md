@@ -2,7 +2,13 @@
 
 # To-Dos
 
-- Links to the navbar
-- Each session must fill the viewport
+- About me text
+- Profile picture (maybe)
+- Footer
 - Create gifs for each project
 - Create illustrations for algorithms projects
+- Description for each tech
+- English
+- A11y (keyboard navigation, screen reader, high contrast colors)
+- Favicon
+- Refactor
