@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import Contact from "./Contact";
 import { Heading1 } from "./Headings";
+import CopyEmail from "./CopyEmail";
 
 import gitHubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
@@ -38,6 +39,7 @@ export default function ContactSection() {
           text={"Me envie um e-mail"}
         />
       </StyledContacts>
+      <CopyEmail />
     </section>
   );
 }
