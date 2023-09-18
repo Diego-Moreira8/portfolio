@@ -6,7 +6,11 @@ const StyledSection = styled.section`
   justify-content: center;
   max-width: 600px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 8rem 1rem 1rem 1rem;
+
+  @media (min-width: 500px) {
+    padding: 1rem;
+  }
 
   h1 {
     font-size: 2.5rem;
