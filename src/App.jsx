@@ -6,6 +6,7 @@ import AboutMeSection from "./components/AboutMeSection";
 import MyProjectsSection from "./components/MyProjectsSection";
 import TechnologiesSection from "./components/TechnologiesSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 const colorPallete = ["#BEE9E8", "#1B4965", "#1b4965d1"];
 
@@ -67,6 +68,7 @@ export default function App() {
           <TechnologiesSection />
           <ContactSection />
         </Content>
+        <Footer />
       </Body>
     </ThemeProvider>
   );
