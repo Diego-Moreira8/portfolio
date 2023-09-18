@@ -2,7 +2,6 @@
 
 # To-Dos
 
-- About me text
 - Profile picture (maybe)
 - Footer
 - Create gifs for each project
