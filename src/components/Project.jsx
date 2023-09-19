@@ -41,14 +41,9 @@ const StyledContainer = styled.div`
   }
 `;
 
-export default function Project({
-  title,
-  src,
-  alt,
-  description,
-  repoUrl,
-  projectUrl,
-}) {
+export default function Project(props) {
+  const { title, src, alt, description, repoUrl, projectUrl } = props;
+
   return (
     <StyledContainer>
       <h2>{title}</h2>
