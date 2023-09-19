@@ -4,6 +4,8 @@ import memoryCard from "../images/memory-card.png";
 import cvApp from "../images/cv-app.png";
 import rockPaperScissors from "../images/rock-paper-scissors.png";
 import landingPage from "../images/landing-page.jpeg";
+import bst from "../images/bst.png";
+import mergeSort from "../images/merge-sort.png";
 
 export default function SlideGenerator() {
   const projects = [
@@ -52,6 +54,7 @@ export default function SlideGenerator() {
     },
     {
       title: "Árvore de Busca Binária",
+      src: bst,
       description: `Este projeto foi proposto como parte do currículo do site 
       The Odin Project, para fixação dos conceitos de estruturas de dados. No 
       projeto pude criar uma implementação de uma Binary Search Tree.`,
@@ -59,6 +62,7 @@ export default function SlideGenerator() {
     },
     {
       title: "Algoritmos de Ordenação",
+      src: mergeSort,
       description: `Este projeto foi proposto como parte do currículo do site 
       The Odin Project, também para fixação dos conceitos de estruturas de 
       dados. A tarefa era criar um algoritmo de merge sort. Acabei escrevendo 
