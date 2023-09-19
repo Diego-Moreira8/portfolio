@@ -8,12 +8,12 @@ import landingPage from "../images/landing-page.jpeg";
 export default function SlideGenerator() {
   const projects = [
     {
-      title: "Joga da Memória - BoJack Horseman",
+      title: "Jogo da Memória - BoJack Horseman",
       src: memoryCard,
       alt: "Captura de tela do projeto Jogo da Memória",
       description: `Este projeto foi proposto como parte do currículo do site 
         The Odin Project para prática de Hooks do React. Trata-se de um jogo da 
-        memória, inspirado pela série Bojack Horseman.`,
+        memória, inspirado pela série BoJack Horseman.`,
       repoUrl: "https://github.com/Diego-Moreira8/odin-memory-card",
       projectUrl: "https://diego-moreira8.github.io/odin-memory-card/",
     },
@@ -58,7 +58,7 @@ export default function SlideGenerator() {
       repoUrl: "https://github.com/Diego-Moreira8/odin-balanced-bst/tree/main",
     },
     {
-      title: "Algorítmos de Ordenação",
+      title: "Algoritmos de Ordenação",
       description: `Este projeto foi proposto como parte do currículo do site 
       The Odin Project, também para fixação dos conceitos de estruturas de 
       dados. A tarefa era criar um algoritmo de merge sort. Acabei escrevendo 
