@@ -1,9 +1,9 @@
 import Project from "./Project";
 
-import memoryCard from "../images/memory-card.png";
-import cvApp from "../images/cv-app.png";
-import rockPaperScissors from "../images/rock-paper-scissors.png";
-import landingPage from "../images/landing-page.jpeg";
+import memoryCard from "../images/memory-card.gif";
+import cvApp from "../images/cv-app.gif";
+import rockPaperScissors from "../images/rock-paper-scissors.gif";
+import landingPage from "../images/landing-page.gif";
 import bst from "../images/bst.png";
 import mergeSort from "../images/merge-sort.png";
 
@@ -12,7 +12,7 @@ export default function SlideGenerator() {
     {
       title: "Jogo da Memória - BoJack Horseman",
       src: memoryCard,
-      alt: "Captura de tela do projeto Jogo da Memória",
+      alt: "Capturas de tela do projeto Jogo da Memória",
       description: `Este projeto foi proposto como parte do currículo do site 
         The Odin Project para prática de Hooks do React. Trata-se de um jogo da 
         memória, inspirado pela série BoJack Horseman.`,
@@ -22,7 +22,7 @@ export default function SlideGenerator() {
     {
       title: "App de Currículo Profissional",
       src: cvApp,
-      alt: "Captura de tela do projeto App de Currículo Profissional",
+      alt: "Capturas de tela do projeto App de Currículo Profissional",
       description: `Este projeto foi proposto como parte do currículo do site 
         The Odin Project para prática dos conceitos básicos de React. Nele, o 
         usuário pode registrar informações de seu currículo profissional.`,
@@ -32,7 +32,7 @@ export default function SlideGenerator() {
     {
       title: "Jogo de Pedra, Papel ou Tesoura",
       src: rockPaperScissors,
-      alt: "Captura de tela do projeto Pedra, Papel ou Tesoura",
+      alt: "Capturas de tela do projeto Pedra, Papel ou Tesoura",
       description: `Este projeto foi proposto como parte do currículo do site 
         The Odin Project para prática de JavaScript puro e Event Listeners.`,
       repoUrl:
@@ -43,7 +43,7 @@ export default function SlideGenerator() {
     {
       title: "Landing Page",
       src: landingPage,
-      alt: "Captura de tela do projeto de Landing Page",
+      alt: "Capturas de tela do projeto de Landing Page",
       description: `Projeto proposto no Alura 7 Days of Code. O objetivo era 
         transformar um projeto do Figma em código em 7 dias. Nele pude praticar 
         HTML e CSS puro.`,
