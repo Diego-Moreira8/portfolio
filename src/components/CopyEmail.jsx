@@ -4,45 +4,48 @@ import { styled } from "styled-components";
 const StyledCopyEmail = styled.div`
   max-width: 400px;
   margin: 0 auto;
+  position: relative;
+`;
 
-  p {
-    text-align: center;
-    margin-bottom: 1rem;
+const Message = styled.p`
+  text-align: center;
+  margin-bottom: 0.5rem;
+`;
+
+const Wrapper = styled.div`
+  border: 1px solid ${(props) => props.theme.text};
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 350px) {
+    flex-flow: row;
   }
+`;
 
-  .wrap {
-    border: 1px solid ${(props) => props.theme.text};
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
+const Email = styled.address`
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+`;
 
-    @media (min-width: 350px) {
-      flex-flow: row;
-    }
+const CopyButton = styled.button`
+  width: 100%;
+  padding: 0.5rem 1rem;
 
-    address {
-      padding: 0.5rem 1rem;
-      font-weight: bold;
-    }
-
-    button {
-      width: 100%;
-      padding: 0.5rem 1rem;
-
-      @media (min-width: 350px) {
-        width: fit-content;
-      }
-    }
+  @media (min-width: 350px) {
+    width: fit-content;
   }
-  .alert {
-    background-color: ${(props) => props.theme.text};
-    color: ${(props) => props.theme.background};
+`;
 
-    p {
-      padding: 0.5rem;
-    }
-  }
+const Alert = styled.div`
+  position: absolute;
+  width: 100%;
+  background-color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.background};
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
 `;
 
 export default function CopyEmail() {
@@ -63,20 +66,22 @@ export default function CopyEmail() {
 
   return (
     <StyledCopyEmail>
-      <p>
+      <Message>
         Caso o link acima não abra o seu aplicativo de e-mail, você pode copiar
         o endereço aqui:
-      </p>
-      <div className="wrap">
-        <address>diego.moreira529@gmail.com</address>
-        <button type="button" onClick={sendToClipboard}>
+      </Message>
+
+      <Wrapper>
+        <Email>diego.moreira529@gmail.com</Email>
+        <CopyButton type="button" onClick={sendToClipboard}>
           Copiar
-        </button>
-      </div>
+        </CopyButton>
+      </Wrapper>
+
       {alert && (
-        <div className="alert">
+        <Alert>
           <p>Copiado para a área de transferência!</p>
-        </div>
+        </Alert>
       )}
     </StyledCopyEmail>
   );

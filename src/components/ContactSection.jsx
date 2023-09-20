@@ -7,19 +7,20 @@ import gitHubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
 import emailIcon from "../icons/email.svg";
 
-const StyledContacts = styled.div`
+const ContactsWrapper = styled.div`
   display: flex;
   flex-flow: column;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   padding: 0 1rem;
+  gap: 2rem;
 `;
 
 export default function ContactSection() {
   return (
     <section>
       <Heading1 text={"Contato"} id={"contact"} />
-      <StyledContacts>
+      <ContactsWrapper>
         <Contact
           url={"https://github.com/Diego-Moreira8"}
           icon={gitHubIcon}
@@ -38,7 +39,7 @@ export default function ContactSection() {
           iconAlt={"Ícone de E-mail"}
           text={"Me envie um e-mail"}
         />
-      </StyledContacts>
+      </ContactsWrapper>
       <CopyEmail />
     </section>
   );

@@ -5,14 +5,17 @@ const StyledTechnology = styled.div`
   gap: 0.5rem;
   flex-flow: column;
   align-items: center;
-  width: fit-content;
   margin: 1rem;
+`;
+
+const Icon = styled.img`
+  width: 75px;
 `;
 
 export default function Technology({ name, iconSrc, iconAlt }) {
   return (
     <StyledTechnology>
-      <img src={iconSrc} alt={iconAlt} title={iconAlt} />
+      <Icon src={iconSrc} alt={iconAlt} title={iconAlt} />
       <strong>{name}</strong>
     </StyledTechnology>
   );

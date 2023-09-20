@@ -1,55 +1,50 @@
 import { styled } from "styled-components";
 
-const StyledNav = styled.nav`
-  padding: 0 0.5rem;
+const StyledNavBar = styled.nav`
   border-top: 2px solid ${(props) => props.theme.text};
   border-bottom: 2px solid ${(props) => props.theme.text};
+  padding: 0 0.5rem;
+`;
+
+const LinksList = styled.ul`
+  width: fit-content;
   display: flex;
+  margin: 0 auto;
+`;
+
+const Link = styled.a`
+  display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
 
-  ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    li {
-      display: flex;
-
-      a {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.25rem 0.5rem;
-        text-align: center;
-        text-decoration: none;
-
-        &:focus,
-        &:hover {
-          background-color: ${(props) => props.theme.text};
-          color: ${(props) => props.theme.background};
-        }
-      }
-    }
+  &:focus,
+  &:hover {
+    background-color: ${(props) => props.theme.text};
+    color: ${(props) => props.theme.background};
   }
 `;
 
 export default function NavBar() {
   return (
-    <StyledNav>
-      <ul>
+    <StyledNavBar>
+      <LinksList>
         <li>
-          <a href="#about-me">Sobre Mim</a>
+          <Link href="#about-me">Sobre Mim</Link>
         </li>
         <li>
-          <a href="#my-projects">Meus Projetos</a>
+          <Link href="#my-projects">Meus Projetos</Link>
         </li>
         <li>
-          <a href="#technologies">Tecnologias</a>
+          <Link href="#technologies">Tecnologias</Link>
         </li>
         <li>
-          <a href="#contact">Contato</a>
+          <Link href="#contact">Contato</Link>
         </li>
-      </ul>
-    </StyledNav>
+      </LinksList>
+    </StyledNavBar>
   );
 }

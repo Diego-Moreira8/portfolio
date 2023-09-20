@@ -1,66 +1,67 @@
 import { styled } from "styled-components";
 
-const StyledContainer = styled.div`
+const StyledProject = styled.div`
   border: 2px solid ${(props) => props.theme.text};
+`;
 
-  h2 {
-    padding: 0.5rem;
-    background-color: ${(props) => props.theme.text};
-    color: ${(props) => props.theme.background};
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-  }
+const Title = styled.h2`
+  padding: 0.5rem;
+  background-color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.background};
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+`;
 
-  img {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: top;
-    border-bottom: 2px solid ${(props) => props.theme.text};
-  }
+const Screenshot = styled.img`
+  border-bottom: 2px solid ${(props) => props.theme.text};
+  width: 100%;
+`;
 
-  > div {
-    padding: 1rem;
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+`;
 
-    p {
-      margin-bottom: 1rem;
-    }
+const Description = styled.p`
+  margin-bottom: 1rem;
+`;
 
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+const LinksWrapper = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
 
-      a {
-        text-align: center;
-        display: block;
-      }
-    }
-  }
+const Link = styled.a`
+  text-align: center;
 `;
 
 export default function Project(props) {
   const { title, src, alt, description, repoUrl, projectUrl } = props;
 
   return (
-    <StyledContainer>
-      <h2>{title}</h2>
-      {src && <img src={src} alt={alt} title={alt} />}
-      <div>
-        <p>{description}</p>
-        <div className="links">
-          <a href={repoUrl} target="_blank">
+    <StyledProject>
+      <Title>{title}</Title>
+
+      {src && <Screenshot src={src} alt={alt} title={alt} />}
+
+      <Wrapper>
+        <Description>{description}</Description>
+
+        <LinksWrapper>
+          <Link href={repoUrl} target="_blank">
             Repositório no GitHub
-          </a>
+          </Link>
+
           {projectUrl && (
-            <a href={projectUrl} target="_blank">
+            <Link href={projectUrl} target="_blank">
               Site do projeto
-            </a>
+            </Link>
           )}
-        </div>
-      </div>
-    </StyledContainer>
+        </LinksWrapper>
+      </Wrapper>
+    </StyledProject>
   );
 }

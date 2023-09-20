@@ -8,12 +8,12 @@ import TechnologiesSection from "./components/TechnologiesSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
-const colorPallete = ["#BEE9E8", "#1B4965", "#1b4965d1"];
+const colorPalette = ["#BEE9E8", "#1B4965", "#1b4965d1"];
 
 const theme = {
-  text: colorPallete[0],
-  background: colorPallete[1],
-  lowOpacityBg: colorPallete[2],
+  text: colorPalette[0],
+  background: colorPalette[1],
+  lowOpacityBg: colorPalette[2],
 };
 
 const GlobalStyle = createGlobalStyle`
