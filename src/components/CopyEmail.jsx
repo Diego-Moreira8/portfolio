@@ -5,6 +5,7 @@ const StyledCopyEmail = styled.div`
   max-width: 400px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 1rem;
 `;
 
 const Message = styled.p`

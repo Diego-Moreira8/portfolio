@@ -10,6 +10,7 @@ import gitIcon from "../icons/git.svg";
 import figmaIcon from "../icons/figma.svg";
 import googleIcon from "../icons/google.svg";
 import openIaIcon from "../icons/openai.svg";
+import SectionDescription from "./SectionDescription";
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,6 +31,8 @@ export default function TechnologiesSection() {
   return (
     <section>
       <Heading1 text={"Tecnologias"} id={"technologies"} />
+
+      <SectionDescription text={"As tecnologias que aprendi até o momento."} />
 
       <Wrapper>
         <Row>

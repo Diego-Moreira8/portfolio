@@ -6,6 +6,7 @@ import CopyEmail from "./CopyEmail";
 import gitHubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
 import emailIcon from "../icons/email.svg";
+import SectionDescription from "./SectionDescription";
 
 const ContactsWrapper = styled.div`
   display: flex;
@@ -20,6 +21,9 @@ export default function ContactSection() {
   return (
     <section>
       <Heading1 text={"Contato"} id={"contact"} />
+
+      <SectionDescription text={"Entre em contato comigo!"} />
+
       <ContactsWrapper>
         <Contact
           url={"https://github.com/Diego-Moreira8"}
