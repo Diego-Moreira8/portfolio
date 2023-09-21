@@ -8,6 +8,7 @@ import rockPaperScissors from "../images/rock-paper-scissors.gif";
 import landingPage from "../images/landing-page.gif";
 import bst from "../images/bst.png";
 import mergeSort from "../images/merge-sort.png";
+import portfolio from "../images/portfolio.gif";
 
 const PROJECTS = [
   {
@@ -56,6 +57,7 @@ const PROJECTS = [
   {
     title: "Árvore de Busca Binária",
     src: bst,
+    alt: "Ilustração de uma Árvore de Busca Binária",
     description: `Este projeto foi proposto como parte do currículo do site 
     The Odin Project, para fixação dos conceitos de estruturas de dados. No 
     projeto pude criar uma implementação de uma Binary Search Tree.`,
@@ -64,11 +66,22 @@ const PROJECTS = [
   {
     title: "Algoritmos de Ordenação",
     src: mergeSort,
+    alt: "Ilustração do algorítmo Merge Sort",
     description: `Este projeto foi proposto como parte do currículo do site 
     The Odin Project, também para fixação dos conceitos de estruturas de 
     dados. A tarefa era criar um algoritmo de merge sort. Acabei escrevendo 
     mais alguns para fixar o aprendizado.`,
     repoUrl: "https://github.com/Diego-Moreira8/odin-sort-algorithms",
+  },
+  {
+    title: "Este site",
+    src: portfolio,
+    alt: "Capturas de tela do meu portfólio",
+    description: `Este projeto foi proposto como parte do currículo do site 
+    The Odin Project, para fixação do aprendizado em HTML e CSS avançados. 
+    Resolvi aproveitar o conhecimento em React e desenvolvi o projeto utilizando
+    a biblioteca.`,
+    repoUrl: "https://github.com/Diego-Moreira8/portfolio",
   },
 ];
 
