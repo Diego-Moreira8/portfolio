@@ -2,6 +2,7 @@
 
 import Project from "./Project";
 
+import fakeStore from "../images/fake-store.gif";
 import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
 import rockPaperScissors from "../images/rock-paper-scissors.gif";
@@ -11,6 +12,16 @@ import mergeSort from "../images/merge-sort.png";
 import portfolio from "../images/portfolio.gif";
 
 const PROJECTS = [
+  {
+    title: "FakeStore",
+    src: fakeStore,
+    alt: "Capturas de tela do projeto Fake-Store",
+    description: `Este projeto de loja online, foi proposto como parte do 
+      currículo do site The Odin Project para prática de React Router Dom e 
+      requisição de dados.`,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-shopping-cart",
+    projectUrl: "https://odin-shopping-cart-kappa.vercel.app/",
+  },
   {
     title: "Jogo da Memória - BoJack Horseman",
     src: memoryCard,
