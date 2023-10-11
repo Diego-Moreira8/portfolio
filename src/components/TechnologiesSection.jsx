@@ -6,6 +6,7 @@ import htmlIcon from "../icons/html5.svg";
 import css3Icon from "../icons/css3.svg";
 import javascriptIcon from "../icons/javascript.svg";
 import reactIcon from "../icons/react.svg";
+import styledComponentsIcon from "../icons/styled-components.svg";
 import gitIcon from "../icons/git.svg";
 import figmaIcon from "../icons/figma.svg";
 import googleIcon from "../icons/google.svg";
@@ -13,18 +14,11 @@ import openIaIcon from "../icons/openai.svg";
 import SectionDescription from "./SectionDescription";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-  margin: 0 auto;
-`;
-
-const Row = styled.div`
+  max-width: 600px;
   display: flex;
   justify-content: center;
-
-  @media (max-width: 350px) {
-    flex-flow: column;
-  }
+  flex-wrap: wrap;
+  margin: 0 auto;
 `;
 
 export default function TechnologiesSection() {
@@ -35,54 +29,51 @@ export default function TechnologiesSection() {
       <SectionDescription text={"As tecnologias que aprendi até o momento."} />
 
       <Wrapper>
-        <Row>
-          <Technology
-            name={"HTML5"}
-            iconSrc={htmlIcon}
-            iconAlt={"Ícone da linguagem HTML5"}
-          />
-          <Technology
-            name={"CSS3"}
-            iconSrc={css3Icon}
-            iconAlt={"Ícone da linguagem CSS3"}
-          />
-          <Technology
-            name={"JavaScript"}
-            iconSrc={javascriptIcon}
-            iconAlt={"Ícone da linguagem JavaScript"}
-          />
-        </Row>
-
-        <Row>
-          <Technology
-            name={"React JS"}
-            iconSrc={reactIcon}
-            iconAlt={"Ícone da biblioteca React"}
-          />
-          <Technology
-            name={"Git"}
-            iconSrc={gitIcon}
-            iconAlt={"Ícone da ferramenta Git"}
-          />
-          <Technology
-            name={"Figma"}
-            iconSrc={figmaIcon}
-            iconAlt={"Ícone do software Figma"}
-          />
-        </Row>
-
-        <Row>
-          <Technology
-            name={"Google"}
-            iconSrc={googleIcon}
-            iconAlt={"Ícone do site Google"}
-          />
-          <Technology
-            name={"Chat GPT"}
-            iconSrc={openIaIcon}
-            iconAlt={"Ícone do site Chat GPT"}
-          />
-        </Row>
+        <Technology
+          name={"HTML5"}
+          iconSrc={htmlIcon}
+          iconAlt={"Ícone da linguagem HTML5"}
+        />
+        <Technology
+          name={"CSS3"}
+          iconSrc={css3Icon}
+          iconAlt={"Ícone da linguagem CSS3"}
+        />
+        <Technology
+          name={"JavaScript"}
+          iconSrc={javascriptIcon}
+          iconAlt={"Ícone da linguagem JavaScript"}
+        />
+        <Technology
+          name={"React JS"}
+          iconSrc={reactIcon}
+          iconAlt={"Ícone da biblioteca React"}
+        />
+        <Technology
+          name={"Styled-Components"}
+          iconSrc={styledComponentsIcon}
+          iconAlt={"Ícone da biblioteca Styled-Components"}
+        />
+        <Technology
+          name={"Git"}
+          iconSrc={gitIcon}
+          iconAlt={"Ícone da ferramenta Git"}
+        />
+        <Technology
+          name={"Figma"}
+          iconSrc={figmaIcon}
+          iconAlt={"Ícone do software Figma"}
+        />
+        <Technology
+          name={"Google"}
+          iconSrc={googleIcon}
+          iconAlt={"Ícone do site Google"}
+        />
+        <Technology
+          name={"Chat GPT"}
+          iconSrc={openIaIcon}
+          iconAlt={"Ícone do site Chat GPT"}
+        />
       </Wrapper>
     </section>
   );
