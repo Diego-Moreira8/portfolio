@@ -6,6 +6,7 @@ import fakeStore from "../images/fake-store.gif";
 import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
 import rockPaperScissors from "../images/rock-paper-scissors.gif";
+import recipes from "../images/recipes.gif";
 import landingPage from "../images/landing-page.gif";
 import bst from "../images/bst.png";
 import mergeSort from "../images/merge-sort.png";
@@ -52,6 +53,17 @@ const PROJECTS = [
       "https://github.com/Diego-Moreira8/odin-rock-paper-scissors-project",
     projectUrl:
       "https://diego-moreira8.github.io/odin-rock-paper-scissors-project/",
+  },
+  {
+    title: "Site de receitas",
+    src: recipes,
+    alt: "Capturas de tela do projeto de site de receitas",
+    description: `
+      O primeiro projeto proposto pelo site The Odin Project, para fixação do 
+      aprendizado de HTML. Um site simples com receitas. 
+    `,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-recipes",
+    projectUrl: "https://diego-moreira8.github.io/odin-recipes",
   },
   {
     title: "Landing Page",
