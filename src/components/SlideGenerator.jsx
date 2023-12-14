@@ -8,6 +8,7 @@ import cvApp from "../images/cv-app.gif";
 import calculator from "../images/calculator.gif";
 import sketch from "../images/etch-a-sketch.gif";
 import rockPaperScissors from "../images/rock-paper-scissors.gif";
+import basicForm from "../images/basic-form.gif";
 import recipes from "../images/recipes.gif";
 import landingPage from "../images/landing-page.gif";
 import bst from "../images/bst.png";
@@ -75,6 +76,17 @@ const PROJECTS = [
       "https://github.com/Diego-Moreira8/odin-rock-paper-scissors-project",
     projectUrl:
       "https://diego-moreira8.github.io/odin-rock-paper-scissors-project/",
+  },
+  {
+    title: "Formulário básico",
+    src: basicForm,
+    alt: "Capturas de tela do projeto de formulário básico",
+    description: `
+      Este projeto foi proposto como parte do currículo do site The Odin Project
+      para fixação do aprendizado de formulários HTML.
+    `,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-sign-up-form",
+    projectUrl: "https://diego-moreira8.github.io/odin-sign-up-form",
   },
   {
     title: "Site de receitas",
