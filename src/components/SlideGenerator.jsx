@@ -6,9 +6,11 @@ import fakeStore from "../images/fake-store.gif";
 import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
 import calculator from "../images/calculator.gif";
+import ticTacToe from "../images/tic-tac-toe.gif";
 import sketch from "../images/etch-a-sketch.gif";
 import rockPaperScissors from "../images/rock-paper-scissors.gif";
 import basicForm from "../images/basic-form.gif";
+import dashboard from "../images/dashboard.png";
 import recipes from "../images/recipes.gif";
 import landingPage from "../images/landing-page.gif";
 import bst from "../images/bst.png";
@@ -57,6 +59,15 @@ const PROJECTS = [
     projectUrl: "https://diego-moreira8.github.io/odin-calculator-project",
   },
   {
+    title: "Jogo da Velha",
+    src: ticTacToe,
+    alt: "Capturas de tela do projeto de jogo da velha",
+    description: `Este projeto foi proposto como parte do currículo do site The 
+      Odin Project para aprendizado de JavaScript`,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-tic-tac-toe",
+    projectUrl: "https://diego-moreira8.github.io/odin-tic-tac-toe",
+  },
+  {
     title: "Traço Mágico",
     src: sketch,
     alt: "Capturas de tela do projeto Traço Mágico",
@@ -87,6 +98,17 @@ const PROJECTS = [
     `,
     repoUrl: "https://github.com/Diego-Moreira8/odin-sign-up-form",
     projectUrl: "https://diego-moreira8.github.io/odin-sign-up-form",
+  },
+  {
+    title: "Painel de Controle",
+    src: dashboard,
+    alt: "Capturas de tela do projeto de painel de controle",
+    description: `
+      O primeiro projeto proposto pelo site The Odin Project, para fixação do 
+      aprendizado de HTML. Um site simples de um dashboard.
+    `,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-admin-dashboard",
+    projectUrl: "https://diego-moreira8.github.io/odin-admin-dashboard",
   },
   {
     title: "Site de receitas",
