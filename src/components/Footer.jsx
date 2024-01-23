@@ -9,5 +9,5 @@ const StyledFooter = styled.footer`
 `;
 
 export default function Footer() {
-  return <StyledFooter>Construído por Diego Moreira em 2023</StyledFooter>;
+  return <StyledFooter>Construído por Diego Moreira em 2024</StyledFooter>;
 }
