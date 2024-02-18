@@ -5,6 +5,7 @@ import Project from "./Project";
 import fakeStore from "../images/fake-store.gif";
 import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
+import todoList from "../images/todo-list.gif";
 import restaurant from "../images/restaurant.gif";
 import library from "../images/library.gif";
 import calculator from "../images/calculator.gif";
@@ -49,6 +50,15 @@ const PROJECTS = [
       usuário pode registrar informações de seu currículo profissional.`,
     repoUrl: "https://github.com/Diego-Moreira8/odin-cv-project",
     projectUrl: "https://diego-moreira8.github.io/odin-cv-project/",
+  },
+  {
+    title: "Lista de Tarefas",
+    src: todoList,
+    alt: "Capturas de tela do projeto Lista de Tarefas",
+    description: `Este projeto foi proposto como parte do currículo do site 
+      The Odin Project para prática de Webpack.`,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-todo-list",
+    projectUrl: "https://diego-moreira8.github.io/odin-todo-list",
   },
   {
     title: "Restaurante",
