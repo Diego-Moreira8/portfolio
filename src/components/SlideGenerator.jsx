@@ -5,6 +5,7 @@ import Project from "./Project";
 import fakeStore from "../images/fake-store.gif";
 import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
+import weatherApp from "../images/weather-app.gif";
 import todoList from "../images/todo-list.gif";
 import restaurant from "../images/restaurant.gif";
 import library from "../images/library.gif";
@@ -50,6 +51,16 @@ const PROJECTS = [
       usuário pode registrar informações de seu currículo profissional.`,
     repoUrl: "https://github.com/Diego-Moreira8/odin-cv-project",
     projectUrl: "https://diego-moreira8.github.io/odin-cv-project/",
+  },
+  {
+    title: "App de clima",
+    src: weatherApp,
+    alt: "Capturas de tela do projeto app de clima",
+    description: `Este projeto foi proposto como parte do currículo do site 
+      The Odin Project para prática de JavaScript assíncrono. Recentemente, 
+      refiz o projeto para aprender TypeScript.`,
+    repoUrl: "https://github.com/Diego-Moreira8/weather-app",
+    projectUrl: "https://diego-moreira8.github.io/weather-app",
   },
   {
     title: "Lista de Tarefas",

@@ -5,6 +5,7 @@ import Technology from "./Technology";
 import htmlIcon from "../icons/html5.svg";
 import css3Icon from "../icons/css3.svg";
 import javascriptIcon from "../icons/javascript.svg";
+import typescriptIcon from "../icons/typescript.svg";
 import reactIcon from "../icons/react.svg";
 import styledComponentsIcon from "../icons/styled-components.svg";
 import gitIcon from "../icons/git.svg";
@@ -43,6 +44,11 @@ export default function TechnologiesSection() {
           name={"JavaScript"}
           iconSrc={javascriptIcon}
           iconAlt={"Ícone da linguagem JavaScript"}
+        />
+        <Technology
+          name={"TypeScript"}
+          iconSrc={typescriptIcon}
+          iconAlt={"Ícone do TypeScript"}
         />
         <Technology
           name={"React JS"}
