@@ -13,6 +13,7 @@ import calculator from "../images/calculator.gif";
 import ticTacToe from "../images/tic-tac-toe.gif";
 import sketch from "../images/etch-a-sketch.gif";
 import rockPaperScissors from "../images/rock-paper-scissors.gif";
+import jsForm from "../images/js-form.gif";
 import basicForm from "../images/basic-form.gif";
 import dashboard from "../images/dashboard.png";
 import recipes from "../images/recipes.gif";
@@ -129,6 +130,17 @@ const PROJECTS = [
       "https://github.com/Diego-Moreira8/odin-rock-paper-scissors-project",
     projectUrl:
       "https://diego-moreira8.github.io/odin-rock-paper-scissors-project/",
+  },
+  {
+    title: "Formulário validado com JavaScript",
+    src: jsForm,
+    alt: "Capturas de tela do projeto de formulário validado com JavaScript",
+    description: `
+      Este projeto foi proposto como parte do currículo do site The Odin Project
+      para fixação do aprendizado de formulários validados com JavaScript.
+    `,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-form-validation-js",
+    projectUrl: "https://diego-moreira8.github.io/odin-form-validation-js",
   },
   {
     title: "Formulário básico",
