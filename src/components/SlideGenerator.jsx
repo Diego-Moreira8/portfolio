@@ -7,6 +7,7 @@ import memoryCard from "../images/memory-card.gif";
 import cvApp from "../images/cv-app.gif";
 import weatherApp from "../images/weather-app.gif";
 import todoList from "../images/todo-list.gif";
+import userInteractions from "../images/user-interactions.gif";
 import restaurant from "../images/restaurant.gif";
 import library from "../images/library.gif";
 import calculator from "../images/calculator.gif";
@@ -71,6 +72,16 @@ const PROJECTS = [
       The Odin Project para prática de Webpack.`,
     repoUrl: "https://github.com/Diego-Moreira8/odin-todo-list",
     projectUrl: "https://diego-moreira8.github.io/odin-todo-list",
+  },
+  {
+    title: "Interações de usuário dinâmicas",
+    src: userInteractions,
+    alt: "Capturas de tela do projeto",
+    description: `Este projeto foi proposto como parte do currículo do site 
+      The Odin Project para prática de criação de componentes para
+      interações de usuário dinâmicas.`,
+    repoUrl: "https://github.com/Diego-Moreira8/odin-navbar-and-carousel",
+    projectUrl: "https://diego-moreira8.github.io/odin-navbar-and-carousel",
   },
   {
     title: "Restaurante",
