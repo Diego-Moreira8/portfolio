@@ -1,15 +1,16 @@
-# Meu Portfólio
+# React + Vite
 
-Bem-vindo ao repositório do meu site de portfólio. Aqui, armazeno o código-fonte e os recursos do [meu site pessoal](https://diegomoreira.vercel.app/), onde exibo meu trabalho e projetos.
-O site pode ser acessado por este link: [diegomoreira.vercel.app](https://diegomoreira.vercel.app/)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![image](./src/images/readme-screenshot.jpg)
+Currently, two official plugins are available:
 
-## Tecnologias utilizadas
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Este projeto foi criado com Vite, escrito em React e estilizado com Styled-Components.
-Estou hospedando o site pelo Vercel.
+## React Compiler
 
-## Como usar
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Você pode fazer um "fork" do repositório e cloná-lo utilizando `git clone`. No repositório, execute `npm install`. `npm run dev` inicia o ambiente de desenvolvimento. O arquivo "App.jsx" pode ser utilizado como guia para os outros componentes, que estão na pasta "src".
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
