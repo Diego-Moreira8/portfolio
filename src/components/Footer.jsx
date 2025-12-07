@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 
 export function Footer() {
   return (
-    <footer className="my-8 rounded-xl bg-black px-4 pt-4 pb-20 text-center text-white">
+    <footer className="my-8 rounded-xl bg-black px-4 pt-4 pb-20 text-center text-white dark:bg-white dark:text-black">
       <p className="my-4">
         Construído por
         <br />

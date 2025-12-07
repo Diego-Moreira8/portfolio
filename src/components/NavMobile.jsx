@@ -85,7 +85,7 @@ export function NavMobile() {
       >
         <nav
           onClick={closeNav}
-          className="flex size-full items-end justify-end bg-white/75 p-4 pb-12 backdrop-blur-xs"
+          className="flex size-full items-end justify-end bg-white/75 p-4 pb-12 backdrop-blur-xs dark:bg-black/75 dark:text-white"
         >
           <ul className="flex h-full flex-col flex-wrap items-end justify-end gap-4">
             {pageSectionsArray.map(({ id, title, url }, index) => (
@@ -98,7 +98,7 @@ export function NavMobile() {
                 }}
               >
                 <a
-                  className="hover:bg-secondary active:bg-primary px-2 py-1 text-lg transition-colors hover:font-bold"
+                  className="hover:bg-secondary active:bg-primary px-2 py-1 text-lg transition-colors hover:font-bold dark:hover:text-black"
                   href={url}
                   autoFocus={index === 0}
                 >
