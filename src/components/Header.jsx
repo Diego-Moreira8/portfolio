@@ -29,7 +29,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 h-fit w-full bg-white/75 text-black backdrop-blur-xs transition-shadow duration-1000 dark:bg-black/75 dark:text-white ${shadowVisible ? "shadow-md" : ""}`}
+        className={`sticky top-0 z-10 h-fit w-full bg-white/75 text-black backdrop-blur-xs transition-shadow duration-1000 dark:bg-black/75 dark:text-white ${shadowVisible ? "shadow-md" : ""}`}
       >
         <div className="h-sticky-header-height mx-auto flex max-w-5xl items-center justify-between px-3">
           <a className="p-1 text-xl font-bold" href={pageSections.home.url}>

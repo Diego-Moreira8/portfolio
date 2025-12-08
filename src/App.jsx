@@ -1,5 +1,6 @@
 import { pageSections } from "./utils/page-sections";
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 
 export function App() {
@@ -7,11 +8,13 @@ export function App() {
     <div className="flex min-h-dvh flex-col bg-white font-mono text-black dark:bg-black dark:text-white">
       <Header />
 
-      <div className="mx-auto w-full max-w-5xl p-4">
+      <div className="mx-auto w-full max-w-5xl px-4">
         <main
           className="scroll-mt-sticky-header-height"
           id={pageSections.home.id}
-        ></main>
+        >
+          <Hero />
+        </main>
 
         <Footer />
       </div>

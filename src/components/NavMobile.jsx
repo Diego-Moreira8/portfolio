@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Sandwich } from "./Icons/Sandwich";
 import { pageSectionsArray } from "../utils/page-sections";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export function NavMobile() {
   const [navOpen, setNavOpen] = useState(false);
@@ -70,11 +70,11 @@ export function NavMobile() {
     <div className="block sm:hidden">
       <button
         onClick={openNav}
-        className="h-5 w-6 p-1"
+        className="flex h-6 w-fit items-center"
         type="button"
         title="Abrir menu de navegação"
       >
-        <Sandwich className="size-full" />
+        <RxHamburgerMenu className="size-full" />
         <span className="sr-only">Abrir menu de navegação</span>
       </button>
 
