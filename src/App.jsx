@@ -2,6 +2,7 @@ import { pageSections } from "./utils/page-sections";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
+import { AboutMe } from "./components/AboutMe";
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
           id={pageSections.home.id}
         >
           <Hero />
+          <AboutMe />
         </main>
 
         <Footer />

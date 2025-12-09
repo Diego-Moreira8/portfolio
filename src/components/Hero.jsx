@@ -1,4 +1,5 @@
 import heroPhoto from "../assets/hero-photo.webp";
+import { pageSections } from "../utils/page-sections";
 import { techStack } from "../utils/tech-stack";
 import { CodeGraphic } from "./CodeGraphic";
 import { ScrollDownIcon } from "./ScrollDownIcon";
@@ -52,7 +53,7 @@ export function Hero() {
       </div>
 
       {/* TODO: Adicionar link para descer a primeira seção */}
-      <a className="p-1" href="#">
+      <a className="p-1" href={pageSections.about.url}>
         <ScrollDownIcon className="h-8 w-13" />
       </a>
     </section>
