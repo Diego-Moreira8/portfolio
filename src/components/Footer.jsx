@@ -15,7 +15,7 @@ export function Footer() {
         Apenas meu portfolio!
       </p>
 
-      <p className="mt-8 text-sm">© 2025 Diego — Licença MIT</p>
+      <p className="mt-8 text-sm">© 2026 Diego — Licença MIT</p>
     </footer>
   );
 }

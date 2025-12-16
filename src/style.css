@@ -13,6 +13,8 @@
   --color-soft-white: #ededed;
   --color-soft-dark: #242424;
 
+  --shadow-buttons: 4px 4px 0px 0px var(--color-primary);
+
   --animate-quick-fade: fade 0.125s ease-out forwards;
   --animate-quick-fade-out: fade 0.125s ease-in reverse;
   --animate-drop-in: drop-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
