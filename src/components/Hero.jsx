@@ -1,6 +1,6 @@
 import heroPhoto from "../assets/hero-photo.webp";
 import { pageSections } from "../utils/page-sections";
-import { techStack } from "../utils/tech-stack";
+import { techStackArray } from "../utils/tech-stack";
 import { CodeGraphic } from "./CodeGraphic";
 import { ScrollDownIcon } from "./ScrollDownIcon";
 
@@ -38,7 +38,7 @@ export function Hero() {
 
         <ul className="flex flex-wrap justify-center gap-2 sm:gap-2 sm:px-4">
           {/* eslint-disable-next-line no-unused-vars */}
-          {techStack.map(({ Icon, techName }) => (
+          {techStackArray.map(({ Icon, techName }) => (
             <li
               key={techName}
               className="flex items-center gap-1 rounded-lg bg-black p-2 text-xs text-white sm:p-3 sm:text-base dark:bg-white dark:text-black"

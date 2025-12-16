@@ -4,7 +4,7 @@ export function SectionContainer({ children, id, softBg = false }) {
 
   return (
     <section
-      className={`scroll-mt-sticky-header-height my-8 rounded-2xl p-2 sm:px-8 sm:py-16 ${softBg ? softBgColors : ""}`}
+      className={`scroll-mt-sticky-header-height my-8 w-full rounded-2xl p-2 sm:px-8 sm:py-16 ${softBg ? softBgColors : ""}`}
       id={id}
     >
       {children}

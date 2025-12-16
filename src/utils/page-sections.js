@@ -14,7 +14,7 @@ export const pageSections = {
       return "#" + this.id;
     },
   },
-  howItWorks: {
+  myProjects: {
     title: "Meus Projetos",
     id: "meus-projetos",
     get url() {

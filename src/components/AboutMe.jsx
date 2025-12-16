@@ -3,14 +3,16 @@ import { Heading1, Heading2 } from "./Headings";
 import { LinkButton } from "./LinkButton";
 import { Paragraph } from "./Paragraph";
 import { SectionContainer } from "./SectionContainer";
-import { CV_URL } from "../utils/cv-url";
+import { CV_URL } from "../utils/strings";
 import { pageSections } from "../utils/page-sections";
 
 export function AboutMe() {
+  const { id, url, title } = pageSections.about;
+
   return (
-    <SectionContainer id={pageSections.about.id} softBg={true}>
+    <SectionContainer id={id} softBg={true}>
       <div className="text-center">
-        <Heading1 url={pageSections.about.url}>Sobre Mim</Heading1>
+        <Heading1 url={url}>{title}</Heading1>
 
         <Paragraph>
           Sou um desenvolvedor web em constante evolução, apaixonado por
@@ -29,9 +31,7 @@ export function AboutMe() {
 
         <LinkButton url={CV_URL}>
           <span>Veja o meu currículo</span>
-          <span>
-            <FaExternalLinkAlt />
-          </span>
+          <FaExternalLinkAlt className="h-3 w-fit" />
         </LinkButton>
       </div>
     </SectionContainer>

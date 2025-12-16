@@ -8,16 +8,21 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
-export const techStack = [
-  { techName: "HTML", Icon: FaHtml5 },
-  { techName: "CSS", Icon: FaCss3Alt },
-  { techName: "SASS", Icon: FaSass },
-  { techName: "Tailwind", Icon: RiTailwindCssFill },
-  { techName: "JavaScript", Icon: SiJavascript },
-  { techName: "TypeScript", Icon: SiTypescript },
-  { techName: "React", Icon: FaReact },
-  { techName: "NodeJS", Icon: FaNodeJs },
-  { techName: "Express", Icon: SiExpress },
-  { techName: "PostgreSQL", Icon: SiPostgresql },
-  { techName: "Figma", Icon: FaFigma },
-];
+export const techStack = {
+  html: { techName: "HTML", Icon: FaHtml5 },
+  css: { techName: "CSS", Icon: FaCss3Alt },
+  sass: { techName: "SASS", Icon: FaSass },
+  tailwind: { techName: "Tailwind", Icon: RiTailwindCssFill },
+  javaScript: { techName: "JavaScript", Icon: SiJavascript },
+  typeScript: { techName: "TypeScript", Icon: SiTypescript },
+  react: { techName: "React", Icon: FaReact },
+  nodeJS: { techName: "NodeJS", Icon: FaNodeJs },
+  express: { techName: "Express", Icon: SiExpress },
+  postgreSQL: { techName: "PostgreSQL", Icon: SiPostgresql },
+  figma: { techName: "Figma", Icon: FaFigma },
+};
+
+// Versão em array, que pode ser mapeado para gerar componentes.
+export const techStackArray = Object.entries(techStack).map(
+  (techObject) => techObject[1],
+);
