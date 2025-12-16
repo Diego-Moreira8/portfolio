@@ -9,10 +9,9 @@ export function ProjectCard({ project }) {
         alt={`Captura de tela do projeto ${title}`}
       />
       <h2 className="text-lg font-bold">{title}</h2>
-      <p className="text-sm">{description}</p>
+      <p className="inline grow align-middle text-sm">{description}</p>
 
       <div className="flex justify-center gap-2">
-        {/* eslint-disable-next-line no-unused-vars */}
         {techs.map(({ Icon, techName }, index) => (
           <span key={index} title={techName}>
             <Icon className="h-5 w-fit" />
@@ -22,12 +21,25 @@ export function ProjectCard({ project }) {
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">
-        <a className="font-bold hover:underline" href={repoUrl} target="_blank">
-          Repositório
-        </a>
-        <a className="font-bold hover:underline" href={demoUrl} target="_blank">
-          Demonstração
-        </a>
+        {repoUrl && (
+          <a
+            className="font-bold hover:underline"
+            href={repoUrl}
+            target="_blank"
+          >
+            Repositório
+          </a>
+        )}
+
+        {demoUrl && (
+          <a
+            className="font-bold hover:underline"
+            href={demoUrl}
+            target="_blank"
+          >
+            Demonstração
+          </a>
+        )}
       </div>
     </div>
   );

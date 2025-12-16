@@ -37,7 +37,6 @@ export function Hero() {
         </div>
 
         <ul className="flex flex-wrap justify-center gap-2 sm:gap-2 sm:px-4">
-          {/* eslint-disable-next-line no-unused-vars */}
           {techStackArray.map(({ Icon, techName }) => (
             <li
               key={techName}
