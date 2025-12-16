@@ -26,10 +26,11 @@ export function MyProjects() {
           ))}
         </div>
 
-        <LinkButton url={GITHUB_URL}>
-          <FaGithub className="size-8" />
-          <span>Veja estes e outros projetos no meu GitHub</span>
-        </LinkButton>
+        <LinkButton
+          url={GITHUB_URL}
+          Icon={FaGithub}
+          text={"Veja estes e outros projetos no meu GitHub"}
+        />
       </div>
     </SectionContainer>
   );

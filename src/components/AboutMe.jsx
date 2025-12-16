@@ -1,4 +1,3 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { Heading1, Heading2 } from "./Headings";
 import { LinkButton } from "./LinkButton";
 import { Paragraph } from "./Paragraph";
@@ -29,10 +28,7 @@ export function AboutMe() {
           freelance para aplicar meu conhecimento e ganhar experiência prática!
         </Paragraph>
 
-        <LinkButton url={CV_URL}>
-          <span>Veja o meu currículo</span>
-          <FaExternalLinkAlt className="h-3 w-fit" />
-        </LinkButton>
+        <LinkButton url={CV_URL} text={"Veja o meu currículo"} />
       </div>
     </SectionContainer>
   );

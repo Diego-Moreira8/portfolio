@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { AboutMe } from "./components/AboutMe";
 import { MyProjects } from "./components/MyProjects";
+import { Contact } from "./components/Contact";
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
           <Hero />
           <AboutMe />
           <MyProjects />
+          <Contact />
         </main>
 
         <Footer />
