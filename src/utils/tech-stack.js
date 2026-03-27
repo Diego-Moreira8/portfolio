@@ -1,7 +1,8 @@
 import { FaHtml5, FaSass, FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
 import {
+  SiAstro,
   SiExpress,
   SiJavascript,
   SiPostgresql,
@@ -17,9 +18,11 @@ export const techStack = {
   javaScript: { techName: "JavaScript", Icon: SiJavascript },
   typeScript: { techName: "TypeScript", Icon: SiTypescript },
   react: { techName: "React", Icon: FaReact },
+  astro: { techName: "Astro", Icon: SiAstro },
   webpack: { techName: "Webpack", Icon: SiWebpack },
   nodeJS: { techName: "NodeJS", Icon: FaNodeJs },
   express: { techName: "Express", Icon: SiExpress },
+  php: { techName: "PHP", Icon: RiPhpFill },
   postgreSQL: { techName: "PostgreSQL", Icon: SiPostgresql },
   figma: { techName: "Figma", Icon: FaFigma },
 };
