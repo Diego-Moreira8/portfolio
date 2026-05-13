@@ -11,14 +11,22 @@ import { techStack as t } from "./tech-stack";
  * Effort: 6
  * Quality: 75
  */
+import versatScreenshot from "../assets/projects-screenshots/versat-sm.webp";
 import palomaScreenshot from "../assets/projects-screenshots/paloma-sm.webp";
 import miniDriveScreenshot from "../assets/projects-screenshots/mini-drive-sm.webp";
 import cvAppScreenshot from "../assets/projects-screenshots/cv-app-sm.webp";
 import todoListScreenshot from "../assets/projects-screenshots/todo-list-sm.webp";
-import ticTacToeScreenshot from "../assets/projects-screenshots/tic-tac-toe-sm.webp";
+// import ticTacToeScreenshot from "../assets/projects-screenshots/tic-tac-toe-sm.webp";
 import fakeStoreScreenshot from "../assets/projects-screenshots/fake-store-sm.webp";
 
 export const myProjects = [
+  {
+    screenshot: versatScreenshot,
+    title: "Landing Page",
+    description: `Um site comercial para profissionais em vidraçaria.`,
+    techs: [t.astro, t.tailwind, t.figma],
+    demoUrl: "https://versatvidros.com.br/",
+  },
   {
     screenshot: palomaScreenshot,
     title: "Landing Page",
@@ -62,12 +70,12 @@ export const myProjects = [
     repoUrl: "https://github.com/Diego-Moreira8/odin-todo-list",
     demoUrl: "https://diego-moreira8.github.io/odin-todo-list",
   },
-  {
-    screenshot: ticTacToeScreenshot,
-    title: "Jogo da Velha",
-    description: `Um jogo da velha com placar.`,
-    techs: [t.javaScript, t.css, t.html],
-    repoUrl: "https://github.com/Diego-Moreira8/odin-tic-tac-toe",
-    demoUrl: "https://diego-moreira8.github.io/odin-tic-tac-toe",
-  },
+  // {
+  //   screenshot: ticTacToeScreenshot,
+  //   title: "Jogo da Velha",
+  //   description: `Um jogo da velha com placar.`,
+  //   techs: [t.javaScript, t.css, t.html],
+  //   repoUrl: "https://github.com/Diego-Moreira8/odin-tic-tac-toe",
+  //   demoUrl: "https://diego-moreira8.github.io/odin-tic-tac-toe",
+  // },
 ];
