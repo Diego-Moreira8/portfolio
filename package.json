@@ -10,15 +10,23 @@
     "build": "astro build",
     "preview": "npm run build && wrangler dev",
     "generate-types": "wrangler types",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.2.6",
+    "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.10",
+    "tailwindcss": "^4.3.3",
     "wrangler": "^4.128.0"
   },
   "allowScripts": {
     "esbuild": true,
     "workerd@1.20260831.1": true
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
