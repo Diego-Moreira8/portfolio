@@ -4,8 +4,11 @@ import OpenNavButton from "./OpenNavButton.astro";
 ---
 
 <header
-  class="flex h-15 items-center justify-between border-b border-blue-500 px-4"
+  class="fixed flex h-15 w-full items-center justify-between border-b border-blue-500 bg-sky-950/80 px-4 backdrop-blur-lg"
 >
-  <Logo />
+  <a href="#home"><Logo /></a>
   <OpenNavButton />
 </header>
+
+<!-- Espaço em branco. Evita que conteúdo apareça atrás do Header -->
+<div class="h-15"></div>

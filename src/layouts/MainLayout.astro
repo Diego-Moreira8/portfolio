@@ -1,6 +1,8 @@
 ---
+import Header from "@components/Header.astro";
 import "../styles/global.css";
 import Head from "@components/Head.astro";
+import NavMobile from "@components/NavMobile.astro";
 
 interface Props {
   title?: string;
@@ -12,7 +14,9 @@ const { title } = Astro.props;
 <html lang="pt-BR">
   <Head title={title} />
 
-  <body class="bg-black text-white">
+  <body class="bg-black font-mono text-white">
+    <Header />
+    <NavMobile />
     <slot />
   </body>
 </html>

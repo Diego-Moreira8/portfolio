@@ -1,0 +1,49 @@
+---
+import { navLinks } from "@utils/navLinks";
+---
+
+<dialog
+  class="h-full max-h-none w-full max-w-none bg-transparent text-white backdrop:bg-transparent"
+  id="mobile-nav"
+>
+  <nav class="flex h-full w-full">
+    <div class="grow bg-black/50" id="nav-overlay" data-close-nav></div>
+
+    <ul
+      class="flex h-full flex-col items-end justify-center gap-4 bg-sky-950/50 pr-4 pl-16 shadow-2xl/100 backdrop-blur-lg"
+    >
+      {
+        navLinks.map((l) => (
+          <a data-close-nav href={l.href}>
+            {l.label}
+          </a>
+        ))
+      }
+    </ul>
+  </nav>
+</dialog>
+
+<script>
+  const navDialog = document.getElementById("mobile-nav") as HTMLDialogElement;
+
+  const openNavElements = document.querySelectorAll(
+    "[data-open-nav]",
+  ) as NodeListOf<HTMLElement>;
+
+  const closeNavElements = document.querySelectorAll(
+    "[data-close-nav]",
+  ) as NodeListOf<HTMLElement>;
+
+  const navOverlay = document.getElementById("nav-overlay") as HTMLDivElement;
+
+  const openNav = () => navDialog.showModal();
+
+  const closeNav = () => navDialog.close();
+
+  openNavElements.forEach((e) => e.addEventListener("click", openNav));
+
+  closeNavElements.forEach((e) => e.addEventListener("click", closeNav));
+
+  // Necessário para fechar ao rolar a página em mobile
+  navOverlay.addEventListener("touchmove", closeNav);
+</script>
