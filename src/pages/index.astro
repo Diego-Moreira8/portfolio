@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import test from "../assets/profilePicture.jpg"
 
 ---
 
@@ -13,5 +15,6 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<Image src={test} alt="" height={50} />
 	</body>
 </html>
