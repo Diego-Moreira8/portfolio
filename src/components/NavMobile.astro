@@ -1,26 +1,46 @@
 ---
 import { navLinks } from "@utils/navLinks";
+import CloseNavButton from "./CloseNavButton.astro";
 ---
 
-<nav class="hidden" id="mobile-nav">
-  <ul class="flex w-full flex-col gap-4 p-4 pt-0">
-    {
-      navLinks.map((l) => (
-        <li class="">
-          <a
-            class="block text-center hover:underline"
-            href={l.href}
-            data-close-nav
-          >
-            {l.label}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-</nav>
+<!-- top precisa ser a altura do header -->
+<dialog
+  class="top-15 flex h-full w-full max-w-none flex-col bg-transparent text-white backdrop:bg-transparent"
+  id="mobile-nav-dialog"
+>
+  <CloseNavButton />
+
+  <nav class="hidden" id="mobile-nav">
+    <ul class="flex w-full flex-col items-center gap-4 p-4 pt-1">
+      {
+        navLinks.map((l) => (
+          <li>
+            <a
+              class="px-4 text-center hover:underline"
+              data-close-nav
+              href={l.href}
+            >
+              {l.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <!-- Overlay da nav mobile -->
+  <div class="hidden grow bg-black/25" id="nav-overlay" data-close-nav></div>
+</dialog>
 
 <script>
+  const headerHeight = 4 * 15;
+
+  const header = document.querySelector("header") as HTMLElement;
+
+  const dialog = document.getElementById(
+    "mobile-nav-dialog",
+  ) as HTMLDialogElement;
+
   const nav = document.getElementById("mobile-nav") as HTMLElement;
 
   const navOverlay = document.getElementById("nav-overlay") as HTMLDivElement;
@@ -51,6 +71,12 @@ import { navLinks } from "@utils/navLinks";
     showElement(closeNavButton);
     showElement(nav);
     showElement(navOverlay);
+
+    dialog.showModal();
+
+    const navHeight = nav.getBoundingClientRect().height;
+
+    header.style.height = `${headerHeight + navHeight}px`;
   };
 
   const closeNav = () => {
@@ -58,6 +84,10 @@ import { navLinks } from "@utils/navLinks";
     showElement(openNavButton);
     hideElement(nav);
     hideElement(navOverlay);
+
+    dialog.close();
+
+    header.style.height = `${headerHeight}px`;
   };
 
   openNavElements.forEach((e) => e.addEventListener("click", openNav));
