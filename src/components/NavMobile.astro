@@ -2,29 +2,36 @@
 import { navLinks } from "@utils/navLinks";
 ---
 
-<dialog
-  class="h-full max-h-none w-full max-w-none bg-transparent text-white backdrop:bg-transparent"
-  id="mobile-nav"
->
-  <nav class="flex h-full w-full">
-    <div class="grow bg-black/50" id="nav-overlay" data-close-nav></div>
-
-    <ul
-      class="flex h-full flex-col items-end justify-center gap-4 bg-sky-950/50 pr-4 pl-16 shadow-2xl/100 backdrop-blur-lg"
-    >
-      {
-        navLinks.map((l) => (
-          <a data-close-nav href={l.href}>
+<nav class="hidden" id="mobile-nav">
+  <ul class="flex w-full flex-col gap-4 p-4 pt-0">
+    {
+      navLinks.map((l) => (
+        <li class="">
+          <a
+            class="block text-center hover:underline"
+            href={l.href}
+            data-close-nav
+          >
             {l.label}
           </a>
-        ))
-      }
-    </ul>
-  </nav>
-</dialog>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
 
 <script>
-  const navDialog = document.getElementById("mobile-nav") as HTMLDialogElement;
+  const nav = document.getElementById("mobile-nav") as HTMLElement;
+
+  const navOverlay = document.getElementById("nav-overlay") as HTMLDivElement;
+
+  const openNavButton = document.getElementById(
+    "open-nav-button",
+  ) as HTMLButtonElement;
+
+  const closeNavButton = document.getElementById(
+    "close-nav-button",
+  ) as HTMLButtonElement;
 
   const openNavElements = document.querySelectorAll(
     "[data-open-nav]",
@@ -34,11 +41,24 @@ import { navLinks } from "@utils/navLinks";
     "[data-close-nav]",
   ) as NodeListOf<HTMLElement>;
 
-  const navOverlay = document.getElementById("nav-overlay") as HTMLDivElement;
+  const hideElement = (element: HTMLElement) => element.classList.add("hidden");
 
-  const openNav = () => navDialog.showModal();
+  const showElement = (element: HTMLElement) =>
+    element.classList.remove("hidden");
 
-  const closeNav = () => navDialog.close();
+  const openNav = () => {
+    hideElement(openNavButton);
+    showElement(closeNavButton);
+    showElement(nav);
+    showElement(navOverlay);
+  };
+
+  const closeNav = () => {
+    hideElement(closeNavButton);
+    showElement(openNavButton);
+    hideElement(nav);
+    hideElement(navOverlay);
+  };
 
   openNavElements.forEach((e) => e.addEventListener("click", openNav));
 
